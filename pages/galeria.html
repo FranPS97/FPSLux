@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--fontawesome inicia-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawesome termina-->
+    <!--Bootstrap inicia-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Bootstrap termina-->
     <title>Document</title>
     <link rel="icon" href="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a class="favicon" href="../index.html"><img src="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png" alt="favicon FPSLD"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="./informacion.html">Información</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header class="navbar navbar-expand-sm navbar-dark">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png" alt="FPSLD"></a>
+            <button class="navbar-toggler bg-dark" type="button " data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar ">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #d03737;"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informacion.html">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <main class="galeria">
         <div class="texto descripcion">
             <h1>Galería de imágenes</h1>
@@ -57,14 +65,14 @@
             </div>
         </div>    
     </main>
-
-    <footer class="footer index">
+    <footer class="footer">
         <div class="redes">
-            <a> <img src="../images/Logo/icon-instagram.svg" alt="FPSLD Instagram"></a>
+            <i class="fa-brands fa-facebook fa-beat fa-xl" alt="Favicon facebook"></i>
         </div>
         <div class="redes">
-            <a> <img src="../images/Logo/icon-linkedin.svg" alt="FPSLD Linkedin"></a>
+            <i class="fa-brands fa-instagram fa-beat fa-xl" alt="Favicon Instagram"></i>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
