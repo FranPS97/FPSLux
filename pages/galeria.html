@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--fontawesome inicia-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--fontawesome termina-->
     <!--Bootstrap inicia-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--Bootstrap termina-->
     <title>Document</title>
     <link rel="icon" href="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header class="navbar navbar-expand-sm navbar-dark">
         <nav class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png" alt="FPSLD"></a>
-            <button class="navbar-toggler bg-dark" type="button " data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar ">
+            <a class="navbar-brand" href="../index.html"><img
+                    src="../images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png" alt="FPSLD"></a>
+            <button class="navbar-toggler bg-dark" type="button " data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar ">
                 <i class="fa-solid fa-bars fa-beat-fade" style="color: #d03737;"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -43,27 +49,47 @@
             </div>
         </nav>
     </header>
-    <main class="galeria">
-        <div class="texto descripcion">
-            <h1>Galería de imágenes</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum, consequatur, fuga, molestias ipsa temporibus assumenda ipsam unde ipsum delectus error. Autem porro adipisci earum in nobis et deleniti sunt?</p>
-        </div>
-        <div id="carouselCostaRica" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+    <main class="galeria container-fluid">
+        <div id="carouselExampleCaptions" class="galeria_carousel carousel slide">
+            <div class="indicadores carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="muestra carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/Imagenes general/cardetail-pulidora.jpg" alt="Detallado pulidora">
+                    <img src="../img/cardetail-pulidora.jpg" class="imagen_1 d-block w-100" alt="...">
+                <div class="fw-bold badge text-wrap-center custom-bg-color carousel-caption d-none d-md-block mb-4" style="width: auto;">
+                    <h5>Pulido de auto</h5>
                 </div>
-                <div class="carousel-item">
-                    <img src="../images/Imagenes general/detallado aros.jpg"  alt="detallado de aros">
                 </div>
-                <div class="carousel-item">
-                    <img src="../images/Imagenes general/detallado interno.jpg"  alt="detallado interno">
+                <div class="muestra carousel-item">
+                    <img src="../img/detallado aros.jpg" class="imagen_2 d-block w-100" alt="...">
+                    <div class="fw-bold badge text-wrap-center custom-bg-color carousel-caption d-none d-md-block mb-4" style="width: auto;">
+                        <h5>Detallado en aros</h5>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="../images/Imagenes general/lavado.jpg"  alt="lavado de carro">  
+                <div class="muestra carousel-item">
+                    <img src="../img/detallado interno.jpg" class="imagen_3 d-block w-100" alt="...">
+                    <div class="fw-bold badge text-wrap-center custom-bg-color carousel-caption d-none d-md-block mb-4" style="width:auto;">
+                        <h5>Detallado en tapiceria</h5>
+                    </div>
                 </div>
             </div>
-        </div>    
+            <button class=" carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
     <footer class="footer">
         <div class="redes">
@@ -73,6 +99,9 @@
             <i class="fa-brands fa-instagram fa-beat fa-xl" alt="Favicon Instagram"></i>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
