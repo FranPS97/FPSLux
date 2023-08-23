@@ -73,6 +73,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
 }
 .nleft {
     background-image: url(../img/auto\ en\ show.jpg);
@@ -117,6 +119,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .nleft-s1 {
     background-image: url(../img/detallado\ interno.jpg);
@@ -252,6 +256,7 @@ main.info-general {
     font-size: 18px;
     line-height: 1.5;
     color: #2C3E50;
+    text-align: justify;
 }
 /* Estilos Contacto */
 .contact-form {
