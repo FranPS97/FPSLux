@@ -1,0 +1,21 @@
+
+.galeria {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.galeria_carousel {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 2rem;
+}
+@media (max-width: 767px) {
+    .galeria {
+        margin-bottom: 0;
+    }
+    .footer .footer {
+        margin-top: auto;
+    }
+}

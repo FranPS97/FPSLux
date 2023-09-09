@@ -1,0 +1,95 @@
+/*Font de goole */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@0;1&display=swap');
+/*variables reutilizables */
+:root {
+    --color-background: #B2B2B2;
+    --border-color: #860C0C;
+    --nav-letras: #0C1248;
+    --nav-background: #FFFFFF;
+    --H1-color: #860C0C;
+    --H2-color: #2C3E50;
+    --P-color: #2C3E50;
+    --H1-size: 30px;
+    --H2-size: 25px;
+    --P-size: 18px;
+    --H-size: 20px;
+    --hover-backgroung: #D03737;
+    --hover-letras-color: black;
+}
+/* Reseteo de estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-background) !important;
+    height: 100%;
+}
+/* Estilos navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-background);
+    border-bottom: 2px solid var(--border-color);
+    z-index: 1000;
+}
+.navbar-brand img {
+    padding-left: 10px !important;
+}
+.nav-link {
+    color: var(--nav-letras) !important;
+    font-size: var(--H-size) !important;
+    font-weight: bold !important;
+    border-radius: 15px;
+    padding: 10px !important;
+}
+.nav-link:hover {
+    color: var(--nav-background) !important;
+    background-color: var(--border-color);
+}
+@media only screen and (min-width:0) and (max-width: 576px) {
+    .navbar {
+        margin-bottom: 20px;
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .nav-link:hover {
+        color: var(--nav-background) !important;
+        background-color: var(--border-color);
+    }
+}
+
+/* Estilos footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--nav-background);
+    border-top: 2px solid #860C0C;
+    flex-shrink: 0;
+}
+footer div i:hover {
+    border: 2px solid #0C1248;
+    color: #0C1248;
+    padding: 15px;
+}
+footer div {
+    margin: 0 20px;
+}
+footer div i {
+    display: block;
+    border-radius: 15px;
+}
+
+@import "_contacto";
+@import "_galeria";
+@import "_index";
+@import "_informacion";
+@import "_servicios";
