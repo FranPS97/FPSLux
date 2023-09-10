@@ -1,0 +1,38 @@
+.galeria_carousel {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 2rem;
+    }
+    .muestra .carousel-item img {
+        min-height: 75vh;
+        justify-content: center;
+    }
+
+}
+main {
+    @media (max-width: 576px) {
+        min-height: 50vh;
+    }
+    .indicadores {
+        display: none;
+    }
+    .muestra .fw-bold {
+        min-height: 75vh;
+        justify-content: center;
+    }
+}
+.footer {
+    &.footer {
+        margin-top: auto;
+    }
+}

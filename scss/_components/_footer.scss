@@ -1,0 +1,28 @@
+
+/* Estilos footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--nav-background);
+    border-top: 2px solid #860C0C;
+    flex-shrink: 0;
+
+    div {
+        margin: 0 20px;
+
+        i {
+            display: block;
+            border-radius: 15px;
+            transition: border, color, padding 0.3s ease;
+
+            &:hover {
+                border: 2px solid #0C1248;
+                color: #0C1248;
+                padding: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 140px;
+    font-weight: bold;
+    text-align: center;
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #0C1248;
+        border-radius: 1px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        box-sizing: border-box;
+        &:focus {
+            outline: none;
+        }
+    }
+    textarea {
+        height: 150px;
+    }
+    h1 {
+        margin: 20px;
+        color: #650E0E;
+    }
+    p {
+        margin: 10px;
+        color: #2C3E50;
+        font-weight: bold;
+    }
+    @media only screen and (min-width: 0) and (max-width: 576px) {
+        label,
+        input,
+        textarea,
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

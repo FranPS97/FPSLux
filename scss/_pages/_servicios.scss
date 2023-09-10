@@ -1,0 +1,71 @@
+.main-s {
+    min-height: 100vh;
+    flex: 1;
+    .row-s {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        .nleft-s1 {
+            background-image: url(../img/detallado\ interno.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 50%;
+            background-position: center;
+            margin-right: 10px;
+        }
+        .nleft-s2 {
+            background-image: url(../img/lavado.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 50%;
+            background-position: center;
+            margin-left: 10px;
+        }
+        .nleft-s3 {
+            background-image: url(../img/cardetail-pulidora.jpg);
+            background-size: cover;
+            height: 600px;
+            width: 50%;
+            background-position: center;
+            margin-right: 10px;
+        }
+        .nright-1 {
+            display: grid !important;
+            align-items: center !important;
+        }
+        .custom-bg-color-1 {
+            background-color: #860C0C;
+        }
+        .nright-1 h1 {
+            text-align: center;
+        }
+        .nright-1 p {
+            text-align: justify;
+            align-items: center !important;
+            padding: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .row-s {
+            flex-direction: column;
+            align-items: center;
+            .col-12 {
+                margin-bottom: 20px !important;
+            }
+            .nleft-s1,
+            .nleft-s2,
+            .nleft-s3 {
+                margin-bottom: 20px !important;
+            }
+            .nright-1 {
+                order: 2;
+            }
+            .nleft-s2 {
+                order: 1;
+            }
+        }
+    }
+}

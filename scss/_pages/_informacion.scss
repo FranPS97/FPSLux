@@ -1,0 +1,56 @@
+main.info-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b2b2b2;
+    padding: 20px;
+    .info-h1 {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: #860c0c;
+        }
+    }
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: #b2b2b2;
+    }
+    .info-img {
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        margin-top: 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .info-consejo {
+        text-align: center;
+        max-width: 800px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #860c0c;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #2c3e50;
+            text-align: justify;
+        }
+    }
+}
