@@ -132,9 +132,26 @@ footer div i:hover {
 }
 
 .galeria_carousel {
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
+  height: 50%;
+}
+.galeria_carousel .carousel-control-prev-icon,
+.galeria_carousel .carousel-control-next-icon {
+  font-size: 2rem;
+}
+.galeria_carousel .muestra .carousel-item img {
+  max-height: 80vh;
+  width: auto;
+}
+.galeria_carousel .carousel-item {
+  position: relative;
+}
+.galeria_carousel .fw-bold {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
 }
 @media (max-width: 576px) {
   .galeria_carousel {
@@ -144,14 +161,6 @@ footer div i:hover {
     justify-content: center;
     min-height: 100vh;
   }
-}
-.galeria_carousel .carousel-control-prev-icon,
-.galeria_carousel .carousel-control-next-icon {
-  font-size: 2rem;
-}
-.galeria_carousel .muestra .carousel-item img {
-  min-height: 75vh;
-  justify-content: center;
 }
 
 @media (max-width: 576px) {
@@ -163,7 +172,10 @@ main .indicadores {
   display: none;
 }
 main .muestra .fw-bold {
-  min-height: 75vh;
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  min-height: auto;
   justify-content: center;
 }
 

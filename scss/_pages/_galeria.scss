@@ -1,7 +1,24 @@
 .galeria_carousel {
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
     text-align: center;
+    height: 50%;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 2rem;
+    }
+    .muestra .carousel-item img {
+        max-height: 80vh;
+        width: auto;
+    }
+    .carousel-item {
+        position: relative;
+    }
+    .fw-bold {
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+    }
     @media (max-width: 576px) {
         display: flex;
         flex-direction: column;
@@ -9,15 +26,6 @@
         justify-content: center;
         min-height: 100vh;
     }
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        font-size: 2rem;
-    }
-    .muestra .carousel-item img {
-        min-height: 75vh;
-        justify-content: center;
-    }
-
 }
 main {
     @media (max-width: 576px) {
@@ -27,7 +35,10 @@ main {
         display: none;
     }
     .muestra .fw-bold {
-        min-height: 75vh;
+        position: absolute;
+        text-align: center;
+        padding: 10px;
+        min-height: auto;
         justify-content: center;
     }
 }
