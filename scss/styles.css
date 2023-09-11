@@ -152,6 +152,7 @@ footer div i:hover {
 .galeria_carousel .muestra .carousel-item img {
   max-height: 80vh;
   width: auto;
+  border-radius: 10px;
 }
 .galeria_carousel .carousel-item {
   position: relative;
@@ -319,6 +320,7 @@ main.info-general .info-consejo p {
   width: 50%;
   background-position: center;
   margin-right: 10px;
+  border-radius: 10px;
 }
 .main-s .row-s .nleft-s2 {
   background-image: url(../img/lavado.jpg);
@@ -327,6 +329,7 @@ main.info-general .info-consejo p {
   width: 50%;
   background-position: center;
   margin-left: 10px;
+  border-radius: 10px;
 }
 .main-s .row-s .nleft-s3 {
   background-image: url(../img/cardetail-pulidora.jpg);
@@ -335,6 +338,7 @@ main.info-general .info-consejo p {
   width: 50%;
   background-position: center;
   margin-right: 10px;
+  border-radius: 10px;
 }
 .main-s .row-s .nright-1 {
   display: grid !important;
@@ -364,7 +368,6 @@ main.info-general .info-consejo p {
   .main-s .row-s .nleft-s2,
   .main-s .row-s .nleft-s3 {
     margin-bottom: 20px !important;
-    border-radius: 10px;
   }
   .main-s .row-s .nright-1 {
     order: 2;
