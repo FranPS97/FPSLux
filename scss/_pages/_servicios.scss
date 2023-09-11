@@ -2,7 +2,7 @@
     min-height: 100vh;
     flex: 1;
     .row-s {
-        min-height: 100vh;
+        max-height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -11,8 +11,8 @@
         .nleft-s1 {
             background-image: url(../img/detallado\ interno.jpg);
             background-size: cover;
-            height: 600px;
-            width: 50%;
+            height: 400px;
+            width: 400px;
             background-position: center;
             margin-right: 10px;
             border-radius: 10px;
@@ -20,8 +20,8 @@
         .nleft-s2 {
             background-image: url(../img/lavado.jpg);
             background-size: cover;
-            height: 600px;
-            width: 50%;
+            height: 400px;
+            width: 400px;
             background-position: center;
             margin-left: 10px;
             border-radius: 10px;
@@ -29,8 +29,8 @@
         .nleft-s3 {
             background-image: url(../img/cardetail-pulidora.jpg);
             background-size: cover;
-            height: 600px;
-            width: 50%;
+            height: 400px;
+            width: 400px;
             background-position: center;
             margin-right: 10px;
             border-radius: 10px;
@@ -63,6 +63,8 @@
             .nleft-s2,
             .nleft-s3 {
                 margin-bottom: 20px !important;
+                height: 300;
+                width: 300px;
             }
             .nright-1 {
                 order: 2;

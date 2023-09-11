@@ -3,14 +3,15 @@
     margin: 0 auto;
     text-align: center;
     height: 50%;
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
         font-size: 2rem;
     }
-    .muestra .carousel-item img {
-        max-height: 80vh;
-        width: auto;
-        border-radius: 10px;
+    .muestra {
+        .carousel-item img {
+            max-height: 80vh;
+            width: auto;
+            border-radius: 10px;
+        }
     }
     .carousel-item {
         position: relative;
@@ -19,7 +20,22 @@
         position: absolute;
         text-align: center;
         padding: 10px;
-        background-color: var(--badge-color);
+        background-color: var(--badge-color);   
+        font-size: clamp(1rem, 5vw, 3rem);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        h5 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        @media (max-width: 576px) {
+            font-size: 2vw;   
+            h5 {
+                font-size: 1.5vw;
+            }
+        }
     }
     @media (max-width: 576px) {
         display: flex;
@@ -32,16 +48,31 @@
 main {
     @media (max-width: 576px) {
         min-height: 50vh;
-    }
+    }   
     .indicadores {
         display: none;
     }
-    .muestra .fw-bold {
-        position: absolute;
-        text-align: center;
-        padding: 10px;
-        min-height: auto;
-        justify-content: center;
+    .muestra {
+        .fw-bold {
+            position: absolute;
+            text-align: center;
+            padding: 10px;
+            min-height: auto;
+            justify-content: center;
+            font-size: clamp(1rem, 5vw, 3rem);
+            h5 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            @media (max-width: 576px) {
+                font-size: 3vw;
+                
+                h5 {
+                    font-size: 3.5vw;
+                }
+            }
+        }
     }
 }
 .footer {
