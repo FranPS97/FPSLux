@@ -7,14 +7,15 @@
     --nav-letras: #0C1248;
     --nav-background: #FFFFFF;
     --H1-color: #860C0C;
-    --H2-color: #2C3E50;
-    --P-color: #2C3E50;
+    --H2-color: #FFF;
+    --P-color: #000;
     --H1-size: 30px;
     --H2-size: 25px;
     --P-size: 18px;
     --H-size: 20px;
     --hover-backgroung: #D03737;
     --hover-letras-color: black;
+    --badge-color: #860C0C;
 }
 /* Reseteo de estilos*/
 * {
@@ -23,7 +24,7 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(to right, rgba(255, 87, 51, 0.5), rgba(107, 222, 255, 0.5));
+    background-image:url(../img/pexels-eva-bronzini-7599590.jpg);
     height: 100vh;
 }
 @import "../scss/_components/navbar";

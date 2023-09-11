@@ -4,8 +4,7 @@
     padding: 140px;
     font-weight: bold;
     text-align: center;
-    input,
-    textarea {
+    input, textarea {
         width: 100%;
         padding: 10px;
         border: 1px solid #0C1248;
@@ -16,6 +15,9 @@
         &:focus {
             outline: none;
         }
+    }
+    .form button {
+        background-color: var(--badge-color) !important;
     }
     textarea {
         height: 150px;
@@ -29,11 +31,8 @@
         color: #2C3E50;
         font-weight: bold;
     }
-    @media only screen and (min-width: 0) and (max-width: 576px) {
-        label,
-        input,
-        textarea,
-        button {
+    @media only screen and (max-width: 576px) {
+        input, textarea, button {
             width: 100%;
             margin-bottom: 10px;
         }

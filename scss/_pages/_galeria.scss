@@ -18,6 +18,7 @@
         position: absolute;
         text-align: center;
         padding: 10px;
+        background-color: var(--badge-color);
     }
     @media (max-width: 576px) {
         display: flex;

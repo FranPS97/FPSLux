@@ -14,6 +14,7 @@ main {
 .nleft {
     background-image: url(../img/auto\ en\ show.jpg);
     background-size: cover;
+    border-radius: 10px;
     height: 800px;
     width: 50%;
     background-position: center center;
@@ -27,10 +28,11 @@ main {
     p {
         text-align: justify;
         align-items: center !important;
+        color: var(--P-color);
     }
 }
 .custom-bg-color {
-    background-color: #860C0C;
+    background-color: var(--badge-color);
 }
 @media only screen and (min-width: 0) and (max-width: 576px) {
     .nleft {

@@ -7,14 +7,15 @@
   --nav-letras: #0C1248;
   --nav-background: #FFFFFF;
   --H1-color: #860C0C;
-  --H2-color: #2C3E50;
-  --P-color: #2C3E50;
+  --H2-color: #FFF;
+  --P-color: #000;
   --H1-size: 30px;
   --H2-size: 25px;
   --P-size: 18px;
   --H-size: 20px;
   --hover-backgroung: #D03737;
   --hover-letras-color: black;
+  --badge-color: #860C0C;
 }
 
 /* Reseteo de estilos*/
@@ -25,7 +26,7 @@
 }
 
 body {
-  background: linear-gradient(to right, rgba(255, 87, 51, 0.5), rgba(107, 222, 255, 0.5));
+  background-image: url(../img/pexels-eva-bronzini-7599590.jpg);
   height: 100vh;
 }
 
@@ -36,45 +37,43 @@ body {
   border-bottom: 2px solid var(--border-color);
   z-index: 1000;
 }
-
-.nav-link {
+.navbar .nav-link {
   color: var(--nav-letras) !important;
   font-size: var(--H-size) !important;
   font-weight: bold !important;
-  border-radius: 15px;
-  padding: 10px !important;
+  display: inline-block;
   position: relative;
   overflow: hidden;
+  padding: 10px;
 }
-.nav-link::before {
+.navbar .nav-link::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255, 87, 51, 0.5), rgba(107, 222, 255, 0.5));
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
   z-index: -1;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
-.nav-link:hover::before {
+.navbar .nav-link:hover::before {
   transform: scaleX(1);
 }
 
-@media only screen and (min-width: 0) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .navbar-collapse {
     display: flex;
     flex-direction: column !important;
     justify-content: center !important;
     text-align: center !important;
   }
-  .nav-link {
+  .navbar-collapse .nav-link {
     text-align: center;
   }
 }
-/* Estilos footer */
 footer {
   display: flex;
   justify-content: center;
@@ -106,8 +105,7 @@ footer div i:hover {
   font-weight: bold;
   text-align: center;
 }
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #0C1248;
@@ -116,9 +114,11 @@ footer div i:hover {
   font-size: 20px;
   box-sizing: border-box;
 }
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
   outline: none;
+}
+.contact-form .form button {
+  background-color: var(--badge-color) !important;
 }
 .contact-form textarea {
   height: 150px;
@@ -132,11 +132,8 @@ footer div i:hover {
   color: #2C3E50;
   font-weight: bold;
 }
-@media only screen and (min-width: 0) and (max-width: 576px) {
-  .contact-form label,
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
+@media only screen and (max-width: 576px) {
+  .contact-form input, .contact-form textarea, .contact-form button {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -163,6 +160,7 @@ footer div i:hover {
   position: absolute;
   text-align: center;
   padding: 10px;
+  background-color: var(--badge-color);
 }
 @media (max-width: 576px) {
   .galeria_carousel {
@@ -211,6 +209,7 @@ main .row {
 .nleft {
   background-image: url(../img/auto\ en\ show.jpg);
   background-size: cover;
+  border-radius: 10px;
   height: 800px;
   width: 50%;
   background-position: center center;
@@ -226,10 +225,11 @@ main .row {
 .nright p {
   text-align: justify;
   align-items: center !important;
+  color: var(--P-color);
 }
 
 .custom-bg-color {
-  background-color: #860C0C;
+  background-color: var(--badge-color);
 }
 
 @media only screen and (min-width: 0) and (max-width: 576px) {
@@ -296,7 +296,7 @@ main.info-general .info-consejo h2 {
 main.info-general .info-consejo p {
   font-size: 18px;
   line-height: 1.5;
-  color: #2c3e50;
+  color: var(--P-color);
   text-align: justify;
 }
 
@@ -341,7 +341,7 @@ main.info-general .info-consejo p {
   align-items: center !important;
 }
 .main-s .row-s .custom-bg-color-1 {
-  background-color: #860C0C;
+  background-color: var(--badge-color);
 }
 .main-s .row-s .nright-1 h1 {
   text-align: center;
@@ -350,6 +350,7 @@ main.info-general .info-consejo p {
   text-align: justify;
   align-items: center !important;
   padding: 20px;
+  color: var(--P-color);
 }
 @media (max-width: 767px) {
   .main-s .row-s {
@@ -363,6 +364,7 @@ main.info-general .info-consejo p {
   .main-s .row-s .nleft-s2,
   .main-s .row-s .nleft-s3 {
     margin-bottom: 20px !important;
+    border-radius: 10px;
   }
   .main-s .row-s .nright-1 {
     order: 2;
